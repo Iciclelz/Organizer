@@ -10,7 +10,7 @@
         <Label Content="directory name: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="White"/>
         <TextBox x:Name="DirectoryTextBox" Height="20" Margin="110,10,30,0" TextWrapping="NoWrap" VerticalAlignment="Top" Background="#FF1C1E26" Foreground="#FFE95378" VerticalContentAlignment="Center" IsReadOnly="True" CharacterCasing="Lower"/>
         <Button x:Name="DirectorySelectionButton" Content="..." HorizontalAlignment="Right" Margin="0,10,5,0" VerticalAlignment="Top" Width="20" Background="#FF1C1E26" Foreground="#FFE95378" Click="DirectorySelectionButton_Click"/>
-        <ListBox x:Name="ExtensionListBox" HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="300" Margin="10,45,0,30" BorderThickness="1" BorderBrush="#FFE95378" Background="#FF1E1E1E" Foreground="White" IsEnabled="{Binding IsChecked, ElementName=FileExtensionsCheckBox}">
+        <ListBox x:Name="ExtensionListBox" HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="300" Margin="10,45,0,10" BorderThickness="1" BorderBrush="#FFE95378" Background="#FF1C1E26" Foreground="White" IsEnabled="{Binding IsChecked, ElementName=FileExtensionsCheckBox}">
             <ListBox.ContextMenu>
                 <ContextMenu>
                     <MenuItem x:Name="AddMenuItem" Header="Add" Click="AddMenuItem_Click"/>
@@ -19,7 +19,7 @@
                 </ContextMenu>
             </ListBox.ContextMenu>
         </ListBox>
-        <CheckBox Content="file extensions" IsChecked="True" x:Name="FileExtensionsCheckBox" HorizontalAlignment="Left" Margin="115,0,0,10" VerticalAlignment="Bottom" Foreground="#FFE95378"/>
+        <CheckBox Content="file extensions" IsChecked="True" x:Name="FileExtensionsCheckBox" HorizontalAlignment="Left" Margin="315,0,0,10" VerticalAlignment="Bottom" Foreground="#FFE95378"/>
         <GroupBox Header="Options" Margin="315,35,5,40" BorderBrush="White"  Background="#FF1C1E26" Foreground="#FFE95378" BorderThickness="0.1,0.1,0.1,0.1">
             <Grid FlowDirection="LeftToRight">
                 <CheckBox x:Name="AddPrefixCheckBox" Content="add prefix" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="White"/>
@@ -33,7 +33,7 @@
                 <Label Content="created by iciclez" HorizontalAlignment="Left" Margin="5,0,0,5" VerticalAlignment="Bottom" FontFamily="Consolas" Foreground="White"/>
             </Grid>
         </GroupBox>
-        <Button x:Name="OrganizeButton" Content="Organize Files" HorizontalAlignment="Right" Margin="0,0,5,5" VerticalAlignment="Bottom" Width="175" Background="#FF1C1E26" Foreground="#FFE95378" Click="OrganizeButton_Click"/>
+        <Button x:Name="OrganizeButton" Content="organize files" HorizontalAlignment="Right" Margin="0,0,5,5" VerticalAlignment="Bottom" Width="175" Background="#FF1C1E26" Foreground="#FFE95378" Click="OrganizeButton_Click" Height="30"/>
 
     </Grid>
 </Window>
